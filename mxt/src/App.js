@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       <h1>MxtMovies</h1>
-      <SearchBar></SearchBar>
       <RadioButtons></RadioButtons>
+      <SearchBar></SearchBar>
     </div>
   );
 }
