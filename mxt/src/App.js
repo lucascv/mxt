@@ -1,6 +1,7 @@
 import './App.css';
 import SearchBar from './Components/SearchBar';
 import RadioButtons from './Components/RadioButtons';
+import SearchList from './Components/SearchList';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>MxtMovies</h1>
       <RadioButtons></RadioButtons>
       <SearchBar></SearchBar>
+      <SearchList></SearchList>
     </div>
   );
 }

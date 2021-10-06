@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
-import Context from '../Context/Context';
+import React from 'react';
 
 export default function RadioButtons() {
-    const { setSearchType } = useContext(Context);
     return (
-        <div onChange={(e) => setSearchType(e.target.value)}>
+        <div>
             <h4>Buscar por:</h4>
             <input type="radio" name="radio" value="person"/>Artista
             <input type="radio" name="radio" value="movie"/>Filme
