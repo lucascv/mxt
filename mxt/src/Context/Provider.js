@@ -4,10 +4,13 @@ import Context from './Context';
 
 export default function Provider({ children }) {
   const [data, setData] = useState([]);
+  const [searchType, setSearchType] = useState('');
 
   const fullData = {
     data,
     setData,
+    searchType,
+    setSearchType,
   };
 
   return (
