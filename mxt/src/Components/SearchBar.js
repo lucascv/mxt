@@ -6,8 +6,9 @@ import { getValue } from '../Services/getRadioBtnValue';
 const onClickHandler = (searchType, query, setSearchType, setData) => {
     console.log(getValue());
     setData([]);
-    setSearchType(getValue());
-    fetchSearch(searchType, query).then((response) => console.log(response.results) || setData(response.results));
+    const radioValue = getValue();
+    setSearchType(radioValue);
+    fetchSearch(radioValue, query).then((response) => console.log(response.results) || setData(response.results));
 }
 
 export default function SearchBar() {

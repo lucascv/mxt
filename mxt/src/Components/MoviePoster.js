@@ -6,15 +6,19 @@ export default function MoviePoster({ post }) {
   const [showMore, setShowMore] = useState(false);
 
   if (!showMore) return (
-    <div onClick={() => setShowMore((current) => !current)}>
+    <div className="poster" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
     </div>
   );
 
   return (
-    <div onClick={() => setShowMore((current) => !current)}>
+    <div className="poster" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
-      <p>teste</p>
+      <div>
+        <p>Título: {post.original_title}</p>
+        <p>Data de lançamento: {post.release_date}</p>
+        <p>Avaliação: {post.vote_average}</p>
+      </div>
     </div>
 
   );
