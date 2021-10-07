@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(15, 23, 30);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 200px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.inside-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card {
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.plus {
+    background-color: rgb(15, 23, 30);
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 10%;
+}
+
+.overview {
+    max-width: 200px;
+}
+
+.margin15 {
+    margin: 15px;
+}
