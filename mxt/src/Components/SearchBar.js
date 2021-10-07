@@ -15,7 +15,7 @@ export default function SearchBar() {
     const [query, setQuery] = useState('');
     const placeHolder = "Digite o termo de busca";
     return (
-        <div>
+        <div className="margin15">
             <input type="text" name="search-bar" placeholder={placeHolder} onChange={(e) => setQuery(e.target.value)}></input>
             <button onClick={() => onClickHandler(query, setSearchType, setData)}>
                 Buscar
