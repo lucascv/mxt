@@ -20,6 +20,7 @@ export default function MoviePoster({ post }) {
   if (searchType === "movie") return (
     <div className="card" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
+      <div className="plus">-</div>
       <MovieDetails post={post}></MovieDetails>
     </div>
   );
@@ -27,6 +28,7 @@ export default function MoviePoster({ post }) {
   if (searchType === "person") return (
     <div className="card" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
+      <div className="plus">-</div>
       <PersonDetails post={post}></PersonDetails>
     </div>
   );
@@ -34,6 +36,7 @@ export default function MoviePoster({ post }) {
   if (searchType === "tv") return (
     <div className="card" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
+      <div className="plus">-</div>
       <SeriesDetails post={post}></SeriesDetails>
     </div>
   );
