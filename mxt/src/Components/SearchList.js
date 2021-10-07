@@ -9,7 +9,7 @@ export default function SearchList() {
   if (!data.length) return <div>{`Não encontramos ${handleSearchType(searchType)} com os termos informados`}</div>;
 
   return (
-    <div>
+    <div className="inside-container">
       {data.map((post, i) => <MoviePoster key={i} post={post} />)}
     </div>
   );
