@@ -9,7 +9,7 @@ export default function SeriesDetails({ post }) {
 
   useEffect(() => {
     getDetails(searchType, post.id).then((response) => setNumberSeasons(response.number_of_seasons));
-  }, []);
+  }, [searchType, post.id]);
 
   return (
       <div>

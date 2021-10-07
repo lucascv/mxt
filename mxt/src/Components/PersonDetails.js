@@ -13,7 +13,7 @@ export default function PersonDetails({ post }) {
   useEffect(() => {
     setLatestMovie(compararDatas(post.known_for));
     getDetails(searchType, post.id).then((response) => setBirthday(response.birthday));
-  }, []);
+  }, [searchType, post.id, post.known_for]);
 
   return (
       <div>
