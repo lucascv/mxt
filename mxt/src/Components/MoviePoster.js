@@ -13,6 +13,7 @@ export default function MoviePoster({ post }) {
   if (!showMore) return (
     <div className="poster" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
+      <div>+</div>
     </div>
   );
 
