@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { getTVDetails } from '../Services/getTVDetails';
+import { getDetails } from '../Services/getDetails';
 
 export default function SeriesDetails({ post }) {
   const [numberOfSeasons, setNumberSeasons] = useState(0);
 
   useEffect(() => {
-    getTVDetails(post.id).then((response) => setNumberSeasons(response.number_of_seasons));
+    getDetails(post.id).then((response) => setNumberSeasons(response.number_of_seasons));
   }, []);
 
   return (

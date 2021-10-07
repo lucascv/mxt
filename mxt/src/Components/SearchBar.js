@@ -3,8 +3,7 @@ import { fetchSearch } from '../Services/fetch';
 import Context from '../Context/Context';
 import { getValue } from '../Services/getRadioBtnValue';
 
-const onClickHandler = (searchType, query, setSearchType, setData) => {
-    console.log(getValue());
+const onClickHandler = (query, setSearchType, setData) => {
     setData([]);
     const radioValue = getValue();
     setSearchType(radioValue);
@@ -12,13 +11,13 @@ const onClickHandler = (searchType, query, setSearchType, setData) => {
 }
 
 export default function SearchBar() {
-    const { setData, searchType, setSearchType } = useContext(Context);
+    const { setData, setSearchType } = useContext(Context);
     const [query, setQuery] = useState('');
     const placeHolder = "Digite o termo de busca";
     return (
         <div>
             <input type="text" name="search-bar" placeholder={placeHolder} onChange={(e) => setQuery(e.target.value)}></input>
-            <button onClick={() => onClickHandler(searchType, query, setSearchType, setData)}>
+            <button onClick={() => onClickHandler(query, setSearchType, setData)}>
                 Buscar
             </button>
         </div>
