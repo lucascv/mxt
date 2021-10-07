@@ -14,7 +14,7 @@ export default function Card({ post }) {
           src={setImage(post)}
           alt={`Imagem do(a) ${post.name}`}
         />
-        <h3>{post.title || post.name}</h3>
+        <h2>{post.title || post.name}</h2>
         <p>{post.overview}</p>
     </div>
 

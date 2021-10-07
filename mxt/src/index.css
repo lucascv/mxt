@@ -6,31 +6,51 @@ body {
     height: 100%;
     margin: 0;
     width: 100%;
- }
-  
-  .poster {
+}
+
+img {
+    max-width: 200px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+}
+
+.inside-container {
+    margin: 10px;
+}
+
+.card {
+    align-items: center;
     background-color: whitesmoke;
     border: 1px solid black;
-  }
-  
-  img {
-    max-width: 200px;
-  }
+    color: black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+}
 
-  .title {
-      font-size: 50px;
-      text-align: center;
-  }
+.card:hover {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
 
-  .container {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 1000px;
-      margin: 20px;
-      padding: 20px;
-  }
-
-  .inside-container {
-      margin: 10px;
-  }
+.plus {
+    background-color: rgb(15, 23, 30);
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 10%;
+}

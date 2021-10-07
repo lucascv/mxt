@@ -11,28 +11,28 @@ export default function MoviePoster({ post }) {
   const { searchType } = useContext(Context);
 
   if (!showMore) return (
-    <div className="poster" onClick={() => setShowMore((current) => !current)}>
+    <div className="card" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
-      <div>+</div>
+      <div className="plus">+</div>
     </div>
   );
 
   if (searchType === "movie") return (
-    <div className="poster" onClick={() => setShowMore((current) => !current)}>
+    <div className="card" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
       <MovieDetails post={post}></MovieDetails>
     </div>
   );
 
   if (searchType === "person") return (
-    <div className="poster" onClick={() => setShowMore((current) => !current)}>
+    <div className="card" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
       <PersonDetails post={post}></PersonDetails>
     </div>
   );
 
   if (searchType === "tv") return (
-    <div className="poster" onClick={() => setShowMore((current) => !current)}>
+    <div className="card" onClick={() => setShowMore((current) => !current)}>
       <Card post={post}></Card>
       <SeriesDetails post={post}></SeriesDetails>
     </div>

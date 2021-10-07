@@ -10,6 +10,8 @@ function App() {
       <div className="container">
         <RadioButtons className="inside-container"></RadioButtons>
         <SearchBar className="inside-container"></SearchBar>
+      </div>
+      <div className="container">
         <SearchList className="inside-container"></SearchList>
       </div>
     </div>
