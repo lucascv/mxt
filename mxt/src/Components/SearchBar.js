@@ -7,7 +7,7 @@ const onClickHandler = (query, setSearchType, setData) => {
     setData([]);
     const radioValue = getValue();
     setSearchType(radioValue);
-    fetchSearch(radioValue, query).then((response) => console.log(response.results) || setData(response.results));
+    fetchSearch(radioValue, query).then((response) => setData(response.results));
 }
 
 export default function SearchBar() {
@@ -16,7 +16,13 @@ export default function SearchBar() {
     const placeHolder = "Digite o termo de busca";
     return (
         <div className="margin15">
-            <input type="text" name="search-bar" placeholder={placeHolder} onChange={(e) => setQuery(e.target.value)}></input>
+            <input
+                type="text"
+                name="search-bar"
+                placeholder={placeHolder}
+                onChange={(e) => setQuery(e.target.value)}
+            >
+            </input>
             <button onClick={() => onClickHandler(query, setSearchType, setData)}>
                 Buscar
             </button>
