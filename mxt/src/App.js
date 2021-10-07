@@ -8,11 +8,11 @@ function App() {
     <div>
       <h1 className="title">MxtMovies</h1>
       <div className="container">
-        <RadioButtons className="inside-container"></RadioButtons>
-        <SearchBar className="inside-container"></SearchBar>
+        <RadioButtons></RadioButtons>
+        <SearchBar></SearchBar>
       </div>
-      <div className="container">
-        <SearchList className="inside-container"></SearchList>
+      <div className="inside-container">
+        <SearchList></SearchList>
       </div>
     </div>
   );
