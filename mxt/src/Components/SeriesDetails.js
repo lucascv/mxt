@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
+import Context from '../Context/Context';
 import { getDetails } from '../Services/getDetails';
 
 export default function SeriesDetails({ post }) {
   const [numberOfSeasons, setNumberSeasons] = useState(0);
+  const { searchType } = useContext(Context);
 
   useEffect(() => {
-    getDetails(post.id).then((response) => setNumberSeasons(response.number_of_seasons));
+    getDetails(searchType, post.id).then((response) => setNumberSeasons(response.number_of_seasons));
   }, []);
 
   return (
