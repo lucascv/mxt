@@ -42,6 +42,8 @@ img {
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    margin: 20px;
+    padding: 10px;
     transition: all 0.5s;
 }
 
@@ -57,4 +59,8 @@ img {
     font-size: 20px;
     text-align: center;
     width: 10%;
+}
+
+.overview {
+    max-width: 200px;
 }

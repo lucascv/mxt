@@ -9,7 +9,7 @@ const setImage = (post) => {
 
 export default function Card({ post }) {
   return (
-    <div>
+    <div className="overview">
         <img
           src={setImage(post)}
           alt={`Imagem do(a) ${post.name}`}
