@@ -6,10 +6,12 @@ import SearchList from './Components/SearchList';
 function App() {
   return (
     <div>
-      <h1>MxtMovies</h1>
-      <RadioButtons></RadioButtons>
-      <SearchBar></SearchBar>
-      <SearchList></SearchList>
+      <h1 className="title">MxtMovies</h1>
+      <div className="container">
+        <RadioButtons className="inside-container"></RadioButtons>
+        <SearchBar className="inside-container"></SearchBar>
+        <SearchList className="inside-container"></SearchList>
+      </div>
     </div>
   );
 }
